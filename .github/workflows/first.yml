@@ -6,7 +6,7 @@ jobs:
 
   job1:
     name: First job
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Step one
       uses: actions/checkout@v2
