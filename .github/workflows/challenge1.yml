@@ -1,0 +1,30 @@
+
+name: Complex Workflow Challenge
+
+on: [push]
+
+jobs:
+
+  Ubuntu-job:
+
+    name:  Ubuntu job
+    runs-on:  ubuntu-latest
+    steps:
+    - name: Ubuntu date
+      run: date
+
+  Windows-job:
+
+    name:  Windows job
+    runs-on:  windows-latest
+    steps:
+    - name: Windows date
+      run: date
+
+  MacOS-job:
+
+    name:  MacOS job
+    runs-on:  macos-latest
+    steps:
+    - name: MacOS date
+      run: date
