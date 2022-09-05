@@ -6,7 +6,7 @@ name: CI
 on:  [push]
 
 jobs:
-  build:
+  say-hello-name:
 
     runs-on: ubuntu-latest
 
