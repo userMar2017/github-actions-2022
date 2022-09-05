@@ -5,18 +5,24 @@ on: [push]
 
 jobs:
 
-  - name:  Ubuntu job
+  Ubuntu job:
+
+    name:  Ubuntu job
     runs-on:  ubuntu-latest
     steps:
     - name: Ubuntu date
       run: date
-    
-  - name:  Windows job
+
+  Windows job:
+
+    name:  Windows job
     runs-on:  windows-latest
-    - name: Ubuntu date
+    - name: Windows date
       run: date
 
-  - name:  MacOS job
+  MacOS job:
+
+    name:  MacOS job
     runs-on:  macos-latest
     - name: Ubuntu date
       run: date
