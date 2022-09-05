@@ -28,3 +28,12 @@ jobs:
     steps:
     - name: MacOS date
       run: date
+
+  depends-job:
+
+    name:  Depends job
+    runs-on:  ubuntu-latest
+    needs: [ Ubuntu-job, Windows-job, MacOS-job ]
+    steps:
+    - name: Depends date
+      run: date
